@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidente de Ransomware - Distrito Escolar de Minneapolis (2023)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>CyberSec Report</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#overview">Visão Geral</a></li>
+                    <li><a href="#attack-phases">Fases do Ataque</a></li>
+                    <li><a href="#prevention">Prevenção</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Incidente de Ransomware no Distrito Escolar de Minneapolis</h1>
+                        <p class="hero-subtitle">Análise detalhada do ataque do grupo Medusa em fevereiro de 2023</p>
+                        <div class="hero-meta">
+                            <span><i class="fas fa-shield-alt"></i> Estudo de Caso</span>
+                            <span><i class="fas fa-exclamation-triangle"></i> Análise de Segurança</span>
+                            <span><i class="fas fa-book"></i> Ransomware</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/ransomware-attack.webp" alt="Ransomware Attack Illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section overview">
+            <div class="container">
+                <h2 class="section-title">Visão Geral do Incidente</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Quando</h3>
+                        <p>Fevereiro de 2023</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Quem</h3>
+                        <p>Grupo Medusa</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Alvo</h3>
+                        <p>Distrito Escolar de Minneapolis (MPS)</p>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Resgate</h3>
+                        <p>US$ 1 milhão</p>
+                    </div>
+                </div>
+
+                <div class="incident-description">
+                    <div class="description-content">
+                        <h3>O que aconteceu?</h3>
+                        <p>O Distrito Escolar de Minneapolis foi vítima de um ataque de ransomware perpetrado pelo grupo criminoso Medusa. O ataque resultou no sequestro de dados sensíveis de alunos e funcionários, incluindo informações pessoais, registros acadêmicos e documentos administrativos.</p>
+                        
+                        <p>Após o distrito se recusar a pagar o resgate de US$ 1 milhão, o grupo Medusa publicou as informações roubadas em sites convencionais, aumentando significativamente o alcance e o impacto da violação de dados.</p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <p><strong>Impacto Crítico:</strong> O grupo publicou um vídeo de 51 minutos no Vimeo mostrando os tipos de dados roubados, incluindo informações altamente sensíveis de estudantes e funcionários.</p>
+                        </div>
+                    </div>
+                    <div class="description-image">
+                        <img src="images/data-breach.jpg" alt="Data Breach Illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="attack-phases" class="section attack-phases">
+            <div class="container">
+                <h2 class="section-title">Fases do Ataque</h2>
+                <div class="phases-timeline">
+                    <div class="phase-item">
+                        <div class="phase-number">1</div>
+                        <div class="phase-content">
+                            <h3>Infiltração</h3>
+                            <p>Os atacantes utilizaram táticas como e-mails de phishing para roubar credenciais de acesso ou exploraram vulnerabilidades em sistemas desatualizados para obter acesso inicial à rede.</p>
+                            <div class="phase-icon">
+                                <i class="fas fa-door-open"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-number">2</div>
+                        <div class="phase-content">
+                            <h3>Exploração e Reconhecimento</h3>
+                            <p>Após obter acesso inicial, os criminosos exploraram a rede do MPS para entender sua infraestrutura e identificar sistemas valiosos, buscando permissões de acesso elevadas.</p>
+                            <div class="phase-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-number">3</div>
+                        <div class="phase-content">
+                            <h3>Movimentação Lateral</h3>
+                            <p>Os atacantes se moveram pela rede, usando credenciais e acessos adquiridos para comprometer outros sistemas, servidores e dispositivos, mapeando dados críticos.</p>
+                            <div class="phase-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-number">4</div>
+                        <div class="phase-content">
+                            <h3>Ação no Objetivo</h3>
+                            <p>Antes de criptografar os arquivos, o grupo Medusa roubou uma grande quantidade de dados confidenciais, incluindo informações de estudantes, registros e documentos administrativos.</p>
+                            <div class="phase-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-item">
+                        <div class="phase-number">5</div>
+                        <div class="phase-content">
+                            <h3>Criptografia e Extorsão</h3>
+                            <p>Após a exfiltração, os atacantes ativaram o ransomware, criptografando arquivos e sistemas do MPS, deixando uma nota de resgate exigindo pagamento para descriptografar os dados.</p>
+                            <div class="phase-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medusa-info">
+                    <div class="medusa-content">
+                        <h3>Sobre o Grupo Medusa</h3>
+                        <p>A gangue de ransomware Medusa começou a operar por volta do final de 2022, mas rapidamente se tornou uma das mais ativas. Em fevereiro de 2023, atacou pelo menos 18 organizações, tornando-se a terceira gangue mais prolífica naquele mês.</p>
+                        <p>O ransomware Medusa opera sob o modelo de "ransomware como serviço", onde agentes com habilidades técnicas limitadas utilizam malware criado por desenvolvedores sofisticados, dividindo posteriormente o dinheiro do resgate.</p>
+                    </div>
+                    <div class="medusa-image">
+                        <img src="images/cybersecurity.jpg" alt="Cybersecurity Concept">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prevention" class="section prevention">
+            <div class="container">
+                <h2 class="section-title">Controles de Prevenção</h2>
+                <p class="section-subtitle">Medidas que poderiam ter reduzido o impacto do ataque</p>
+                
+                <div class="prevention-grid">
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Autenticação Forte</h3>
+                        <ul>
+                            <li>Usar senhas fortes e únicas com gerenciador de senhas</li>
+                            <li>Ativar MFA nos serviços principais</li>
+                            <li>Não compartilhar credenciais</li>
+                        </ul>
+                    </div>
+
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Conscientização</h3>
+                        <ul>
+                            <li>Verificar remetente e URL antes de clicar</li>
+                            <li>Desconfiar de urgência e pedidos de sigilo</li>
+                            <li>Usar filtros avançados de spam e e-mail</li>
+                        </ul>
+                    </div>
+
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Atualizações</h3>
+                        <ul>
+                            <li>Atualizar sistema e aplicativos regularmente</li>
+                            <li>Fazer backup de arquivos importantes</li>
+                            <li>Implementar criptografia para dados sensíveis</li>
+                        </ul>
+                    </div>
+
+                    <div class="prevention-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Controle de Acesso</h3>
+                        <ul>
+                            <li>Adotar o princípio do privilégio mínimo</li>
+                            <li>Usar redes Wi-Fi seguras</li>
+                            <li>Monitorar atividades suspeitas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Segurança Cibernética</h4>
+                    <p>Estudo de caso sobre ransomware e suas implicações para instituições educacionais</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Análise de Incidentes</h4>
+                    <p>Compreendendo os ataques de ransomware e estratégias de prevenção em ambientes educacionais</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
